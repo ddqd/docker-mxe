@@ -1,6 +1,5 @@
 FROM ubuntu
 
-RUN sed -i 's|://.*\..*\.com|://ru.archive.ubuntu.com|' /etc/apt/sources.list
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y autoconf automake bash bison bzip2 \
                     cmake flex gettext git g++ intltool \
